@@ -2,7 +2,6 @@ package wipro_assignment_day_21;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.Keys;
 
 public class Selenium_amazon {
 
@@ -15,7 +14,7 @@ public class Selenium_amazon {
         driver.manage().window().maximize();
 
         Thread.sleep(2000);
-        
+
         driver.findElement(By.id("twotabsearchtextbox"))
               .sendKeys("MacBook under 1 lakh");
 
@@ -43,6 +42,9 @@ public class Selenium_amazon {
 
         Thread.sleep(5000);
 
+        for (String windowHandle : driver.getWindowHandles()) {
+            driver.switchTo().window(windowHandle);
+        }
 
         System.out.println(driver.getTitle());
 

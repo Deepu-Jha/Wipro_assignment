@@ -1,5 +1,4 @@
 package wipro_assignment_day_21;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

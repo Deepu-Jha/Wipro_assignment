@@ -3,12 +3,21 @@ package Selenium_project_with_maven.Selenium_1;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Ecommerce_Test {
 
     public static void main(String[] args) throws InterruptedException {
 
-        WebDriver driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+
+        options.addArguments("--disable-notifications");
+
+        options.addArguments("--disable-popup-blocking");
+
+        options.addArguments("--disable-save-password-bubble");
+
+        WebDriver driver = new ChromeDriver(options);
 
         driver.manage().window().maximize();
 

@@ -8,7 +8,7 @@ public class DBConnection_Ex {
             Class.forName("com.mysql.cj.jdbc.Driver");
             String url = "jdbc:mysql://localhost:3306/wipro_db2";
             String username = "root";
-            String password = "Deepujha123@";
+            String password = "	Deepujha123@";
 
             Connection con = DriverManager.getConnection(url, username, password);
 

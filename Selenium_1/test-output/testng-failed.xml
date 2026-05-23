@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="assignment_day_23.Amazon">
+      <class name="day_27.GridTest">
         <methods>
-          <include name="loginTest"/>
-          <include name="addLaptopToCart"/>
-          <include name="setup"/>
-          <include name="searchLaptopTest"/>
-          <include name="closeBrowser"/>
+          <include name="gridTesting"/>
         </methods>
-      </class> <!-- assignment_day_23.Amazon -->
+      </class> <!-- day_27.GridTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -12,7 +12,7 @@ public class DBConnection {
             Connection con = DriverManager.getConnection(
             "jdbc:mysql://localhost:3306/wipro_db3",
             "root",
-            "Deepujha123@");
+            "Deepu123@");
 
             System.out.println(
             "Database Connected Successfully");

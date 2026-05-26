@@ -1,0 +1,19 @@
+package com.api.Rest_Api_Project;
+
+import static io.restassured.RestAssured.*;
+import org.testng.annotations.Test;
+ 
+public class GetUsersFirst
+{
+	@Test
+	public void getUsers()
+	{
+		given()
+		
+		.when().get("https://dummyjson.com/users/1")
+		
+		.then().statusCode(200)
+		.log().all();
+	}
+	
+}

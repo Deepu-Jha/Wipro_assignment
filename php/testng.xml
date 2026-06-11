@@ -1,0 +1,14 @@
+<suite name="Suite" parallel="methods"
+thread-count="5">
+
+<test name="PHPTravels">
+
+<classes>
+
+<class name="runners.TestRunner"/>
+
+</classes>
+
+</test>
+
+</suite>
